@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    
+cout << "Enter 3 mumber " << endl;
+
+int num1, num2;
+
+char op;
+cout << "Enter first number: "<< endl;
+cin >> num1;
+cout << "Enter second number : " << endl;
+cin >> num2;
+cout << "Enter operator (+, -, *, /)" << endl;
+cin >> op;
+
+switch(op)
+{
+    case '+':
+      cout << num1 + num2;
+      break;
+    case '-':
+       cout << num1 - num2;
+       break;
+    case '*':
+       cout << num1 * num2;
+       break;
+    case '/':
+        if(num2 != 0)
+       cout << num1 / num2;
+       else 
+       cout << "Errror : Division by zero!";
+       break;
+    default :
+    cout << "Invalid operator " << endl;
+}
+
+
+   
+   return 0;
+
+}
