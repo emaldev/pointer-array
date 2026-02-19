@@ -13,12 +13,17 @@ int main()
             cin >> *(*(ptr + i) + j);
         }
     }
+
       int max = ptr[0][0];
+      int row = 0, col = 0;
 
     for(int i = 0; i < 3; i++){
         for(int j = 0; j < 3; j++){
             if(ptr[i][j] > max) 
             max = ptr[i][j];
+            row = i;
+            col = j;
+
             sum += *(*(ptr + i) + j );
             
         }
@@ -26,6 +31,7 @@ int main()
 
     cout <<"Sum :" << sum << endl;
     cout <<"Max :" << max << endl;
+    cout << "Row is :" << row << "col is :" << col;
     
 
     return 0;
