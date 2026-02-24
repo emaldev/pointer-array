@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void printNum(int x){
-    cout << " integer number is :" << x << endl;
+int printNum(int x){
+    return x;
 }
 
-void printNum(float  y){
-         cout << " floar number is :" << y;
+float printNum(float  y){
+       return y;
 }
 
 
@@ -15,8 +15,9 @@ int main(){
     int a;
     int b;
     cin >> a >> b;
-        printNum(a);
-    printNum(b);
+      int result1 =  printNum(a);
+      int result2 =  printNum(b);
+      cout << "integer number is :" << result1 << endl << "and floar number is :"  << result2 << endl;
 
 
 return 0;
