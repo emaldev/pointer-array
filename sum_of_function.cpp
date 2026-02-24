@@ -1,15 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int sumNumber(int x , int y){
-    return x + y;
+void printNum(int x){
+    cout << " integer number is :" << x << endl;
 }
+
+void printNum(float  y){
+         cout << " floar number is :" << y;
+}
+
+
 int main(){
- int a , b;
- cout << "Enter tow numbet : ";
- cin >> a >> b;
- int result = sumNumber(a, b);
-cout << "Sum  is : " << result << endl;
+
+    int a;
+    int b;
+    cin >> a >> b;
+        printNum(a);
+    printNum(b);
+
 
 return 0;
 
