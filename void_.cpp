@@ -1,27 +1,23 @@
 #include <iostream>
-#include <string>
- using namespace std;
+using namespace std;
 
-void Welcome()
-   {
-    cout << "Hello ";
-    cout << "Welcome to C++ programming " << endl;
-
-   }
-   int multiply(int a, int b)
-   { 
-    return a * b;
-   }
+int findMax(int a, int b){
+    if(a > b){
+        cout << "The  large number is a   " << a << endl;
+        return a;
+    }else {
+        cout << "The large number is "  << b << endl;
+        return b;
+    }   
+}
 int main()
-    {   
-        Welcome(); 
-        int a, b;
-        cout << "Please Enter tow number " << endl;
-        cin >> a >> b;
-        
-       int result = multiply(a, b);
-       cout << "divide number is " << result << endl;
-        
-        return 0;
+   {
+    int a , b;
+    cout << "Enter 2 number :";
+    cin >> a >> b;
+   findMax(a , b);
+       
 
-    }
+    return 0;
+
+   }
